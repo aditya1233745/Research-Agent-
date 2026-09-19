@@ -1,0 +1,30 @@
+# Run: what year was the Eiffel tower completed and who build it ?
+
+*Mode: live (claude-sonnet-4-6 + DuckDuckGo) | Step budget: 8 | Steps used: 5*
+
+## Trace
+
+**Step 1 -- plan:** `search` -- Search for basic facts about the Eiffel Tower's construction and completion.
+  -> search(`Eiffel Tower completion year and builder`) found sources: S1, S2, S3, S4
+**Step 2 -- plan:** `summarise` -- S2 directly mentions completion date and construction details from the official Eiffel Tower site.
+  -> **summarise** failed: not fetched (handled gracefully)
+**Step 3 -- plan:** `fetch` -- Fetching the Wikipedia page on the Eiffel Tower to get detailed information about its completion year and builder.
+  -> fetch(`S1`) got 8015 chars
+**Step 4 -- plan:** `summarise` -- S1 is already fetched so I can summarise it to get citable facts about the Eiffel Tower's completion year and builder.
+  -> summarise(`S1`): The Eiffel Tower was completed on **31 March 1889**, having been constructed between 1887 and 1889. It was designed and built by the company of engineer **Gustave Eiffel** (the Compagnie des Établissements Eiffel), with key contributions from engineers Maurice Koechlin and Émile Nouguier, and architect Stephen Sauvestre.
+**Step 5 -- plan:** `finish` -- S1 has been summarised and contains all the information needed to answer the question fully.
+  -> citation check: all claims traceable to sources ✅
+
+## Final Answer
+
+The Eiffel Tower was completed on 31 March 1889, having been constructed between 1887 and 1889 [S1]. It was designed and built by the company of engineer Gustave Eiffel, known as the Compagnie des Établissements Eiffel [S1]. Key contributions also came from engineers Maurice Koechlin and Émile Nouguier, as well as architect Stephen Sauvestre [S1]. The entire structure was finished in record time — just 2 years, 2 months, and 5 days — and was celebrated as a major technical achievement of its era [S1].
+
+Sources:
+[S1] Eiffel Tower - Wikipedia -- https://en.wikipedia.org/wiki/Eiffel_Tower
+[S2] Eiffel Tower history, architecture, design & constructionEiffel Tower | History, Height, & Facts | BritannicaEiffel Tower opens in Paris | March 31, 1889 | HISTORYEiffel Tower - Height, Timeline & Facts | HISTORY133 years and 330 metres - The Eiffel TowerHistory Today: When construction of the iconic Eiffel Tower ... -- https://www.toureiffel.paris/en/the-monument/history  (fetched but not used in final answer)
+[S3] Eiffel Tower | History, Height, & Facts | Britannica -- https://www.britannica.com/topic/Eiffel-Tower-Paris-France  (fetched but not used in final answer)
+[S4] Eiffel Tower opens in Paris | March 31, 1889 | HISTORY -- https://www.history.com/this-day-in-history/march-31/eiffel-tower-opens  (fetched but not used in final answer)
+
+## Errors / non-fatal issues encountered
+
+- summarise requested for [S2] which hasn't been fetched

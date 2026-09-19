@@ -1,0 +1,59 @@
+{
+  "topics": [
+    {
+      "keywords": ["eiffel", "tower", "engineer", "paris", "completed", "built"],
+      "results": [
+        {
+          "title": "Eiffel Tower - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eiffel_Tower",
+          "snippet": "The Eiffel Tower is a wrought-iron lattice tower in Paris, France, completed in 1889."
+        },
+        {
+          "title": "Gustave Eiffel - Britannica",
+          "url": "https://www.britannica.com/biography/Gustave-Eiffel",
+          "snippet": "Gustave Eiffel was a French civil engineer whose company built the tower."
+        },
+        {
+          "title": "Broken Link Archive - EiffelTowerFacts.example",
+          "url": "https://example-broken-mirror.test/eiffel-tower-facts",
+          "snippet": "A mirror page that no longer resolves to real content."
+        }
+      ]
+    },
+    {
+      "keywords": ["photosynthesis", "plants", "chlorophyll", "sunlight", "energy", "convert"],
+      "results": [
+        {
+          "title": "Photosynthesis - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Photosynthesis",
+          "snippet": "Photosynthesis is a process used by plants to convert light energy into chemical energy."
+        },
+        {
+          "title": "How Photosynthesis Works - National Geographic",
+          "url": "https://www.nationalgeographic.com/science/article/photosynthesis",
+          "snippet": "Chlorophyll in chloroplasts absorbs sunlight to power the reaction."
+        }
+      ]
+    },
+    {
+      "keywords": ["great", "wall", "china", "length", "history", "built", "dynasty"],
+      "results": [
+        {
+          "title": "Great Wall of China - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Great_Wall_of_China",
+          "snippet": "The Great Wall of China is a series of fortifications built across northern China."
+        },
+        {
+          "title": "Great Wall of China - UNESCO",
+          "url": "https://whc.unesco.org/en/list/438/",
+          "snippet": "Listed as a UNESCO World Heritage Site, built over centuries starting in the 7th century BC."
+        },
+        {
+          "title": "Dead Link - GreatWallTours.example",
+          "url": "https://example-defunct-tours.test/great-wall",
+          "snippet": "A tour operator page that has since gone offline."
+        }
+      ]
+    }
+  ]
+}
